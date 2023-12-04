@@ -130,14 +130,73 @@ nav a:hover {
     display: block;
 }
 
-#section1{
-    height: 220px;
+#section1 {
+    height: 440px;
     background-color: #0b0b0b;
     margin-top: -10px;
+    display: flex;
+    align-items: center;
+}
+
+#mainContainerSection1 {
+    border: 3px #6c98ca solid;
+    width: 1050px;
+    height: 210px;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex; /* Use flexbox for the main container */
+    align-items: center;
+    justify-content: center;
+}
+
+#mainContainerSection1 img {
+    transform: scale(0.2) translateY(0); /* Default state */
+    border: solid white 10px;
+    border-radius: 1000px;
+    margin: -100px;
+    padding: 50px;
+    transition: transform 0.5s ease-in-out; /* Apply the transition property here */
+}
+
+#mainContainerSection1 img:hover {
+    transform: scale(0.2) translateY(-40px); /* Move 40px up on hover */
+    border: solid white 10px;
+    border-radius: 1000px;
+    margin: -100px;
+    padding: 50px;
+    transition: transform 0.5s ease-in-out; /* Apply the transition property here */
 }
 
 
+#text{
+    margin-right: 40px;
+}
 
+#mainTextSection1,
+#mainText2Section1 {
+    color: white;
+    font-family: mainBold;
+    font-size: 35px;
+}
+
+#mainText2Section1 {
+    font-family: mainLight;
+    font-size: 15px;
+    margin-top: 20px; /* Adjusted margin */
+}
+
+#logos{
+    height: 130px;
+    margin-right: -40px;
+    display: inline-flex;
+}
+
+
+  #section2{
+    height: 300px;
+    
+  }
 
 
 
