@@ -20,8 +20,28 @@
 }
 
 nav {
-    text-align: center;
-    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    position: fixed;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+    border-radius: 50px;
+    margin-top: -10px;
+    height: 40px;
+}
+
+
+nav.blurred {
+    background-color: rgba(225, 225, 225, 0.5); /* Adjust the alpha value for transparency */
+    backdrop-filter: blur(5px); /* Adjust the blur radius as needed */
 }
 
 nav button {
@@ -64,6 +84,7 @@ nav a:hover {
 }
 
 .main-wrapper {
+    margin-top: 30px;
     justify-content: center;
     display: flex;
     align-items: center;
@@ -74,6 +95,7 @@ nav a:hover {
     margin-right: 0px; /* Adjust the margin as needed */
     height: max-content;
     width: 30%;
+    
 }
 
 #nameMain {
@@ -108,12 +130,36 @@ nav a:hover {
     display: block;
 }
 
+#section1{
+    height: 2000px;
+}
+
 
 @media screen and (max-width: 700px) {
 
     nav {
-        text-align: center;
-        padding-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    
+        background-color: rgb(255, 255, 255);
+        padding: 10px;
+        position: fixed;
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: background-color 0.3s ease;
+        z-index: 1000;
+        border-radius: 50px;
+        margin-top: 10px;
+        height: 20px;
+    }
+    
+    
+    nav.blurred {
+        background-color: rgba(225, 225, 225, 0.5); /* Adjust the alpha value for transparency */
+        backdrop-filter: blur(5px); /* Adjust the blur radius as needed */
     }
 
     nav button {
@@ -154,17 +200,18 @@ nav a:hover {
     }
 
     .main-wrapper {
-        text-align: left;
+        text-align: center;
         justify-content: center;
         display: flex;
         align-items: center;
-        margin-top: 10px;
+        margin-top: 0px;
         margin-left: 12px;
         margin-right: 12px;
         position: relative; /* Make the main wrapper a positioning context */
     }
 
     #mainContainer {
+        margin-top: 70px;
         margin-right: 0px;
         height: max-content;
         width: 100%; /* Change to 100% to take up the full width */
@@ -192,6 +239,7 @@ nav a:hover {
     }
 
     #imageContainer {
+        display: none;
         z-index: 1; /* Ensure the image container is above other elements */
         width: 150px; /* Set the initial width */
         height: 150px;
@@ -208,5 +256,10 @@ nav a:hover {
         display: flex;
     }
 
+
+    #section1{
+        height: 2000px;
+        border: solid red;
+    }
 }
 
