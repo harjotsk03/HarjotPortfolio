@@ -41,7 +41,7 @@ nav {
 
 nav.blurred {
     background-color: rgba(225, 225, 225, 0.5); /* Adjust the alpha value for transparency */
-    backdrop-filter: blur(5px); /* Adjust the blur radius as needed */
+    backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
 }
 
 nav button {
@@ -53,7 +53,7 @@ nav button {
 }
 
 nav a {
-    color: #1e1e1e;
+    color: #0b0b0b;
     text-decoration: none;
     transition: color 0.4s ease, transform 0.5s ease; /* Add transform property */
     letter-spacing: 3px;
@@ -106,7 +106,7 @@ nav a:hover {
 }
 
 #textMain{
-    columns: #1e1e1e;
+    columns: #0b0b0b;
     font-family: mainRegular1;
     letter-spacing: 0.5px;
     margin-top: 40px;
@@ -131,11 +131,34 @@ nav a:hover {
 }
 
 #section1{
-    height: 2000px;
+    height: 220px;
+    background-color: #0b0b0b;
+    margin-top: -10px;
 }
 
 
-@media screen and (max-width: 700px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
 
     nav {
         display: flex;
@@ -146,13 +169,13 @@ nav a:hover {
         background-color: rgb(255, 255, 255);
         padding: 10px;
         position: fixed;
-        width: 90%;
+        width: fit-content;
         left: 50%;
         transform: translateX(-50%);
         transition: background-color 0.3s ease;
         z-index: 1000;
         border-radius: 50px;
-        margin-top: 10px;
+        margin-top: -110px;
         height: 20px;
     }
     
@@ -204,7 +227,7 @@ nav a:hover {
         justify-content: center;
         display: flex;
         align-items: center;
-        margin-top: 0px;
+        margin-top: 130px;
         margin-left: 12px;
         margin-right: 12px;
         position: relative; /* Make the main wrapper a positioning context */
@@ -258,8 +281,144 @@ nav a:hover {
 
 
     #section1{
-        height: 2000px;
-        border: solid red;
+        margin-top: 150px;
+        height: 400px;
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px) and (min-width: 769px) {
+
+    
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        background-color: rgb(255, 255, 255);
+        padding: 15px;
+        position: fixed;
+        width: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: background-color 0.3s ease;
+        z-index: 1000;
+        border-radius: 50px;
+        margin-top: -70px;
+        height: 40px;
+    }
+
+
+    nav.blurred {
+        backdrop-filter: blur(20px); /* Adjust the blur radius as needed */
+    }
+
+    nav button {
+        background-color: transparent;
+        border: none;
+        font-family: mainRegular;
+        font-size: 15px;
+        margin: 30px 30px 30px 30px;
+    }
+
+    nav a {
+        color: #0b0b0b;
+        text-decoration: none;
+        transition: color 0.4s ease, transform 0.5s ease; /* Add transform property */
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        display: inline-block; /* Needed for vertical alignment */
+    }
+
+    nav #active {
+        color: #3875bb;
+        font-family: mainBold;
+    }
+
+    nav a:hover {
+        color: #3781DB;
+        transform: translateY(-5px); /* Adjust the value to control the upward movement */
+    }
+
+
+    #name{
+        color: #4C5F75;
+        text-decoration: none;
+        font-family: mainRegular;
+        font-size: 20px;
+        float: left;
+        margin: 30px 40px 30px 60px;
+        transform: translateY(0px); /* Adjust the value to control the upward movement */
+
+    }
+
+    .main-wrapper {
+        margin-top: 90px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        margin-left: 90px;
+    }
+
+    #mainContainer {    
+        margin-right: 50px; /* Adjust the margin as needed */
+        height: max-content;
+        width: 30%;
+        
+    }
+
+    #nameMain {
+        font-family: mainBold;
+        font-size: 125px;
+        line-height: 130px;
+        letter-spacing: 0px;
+    }
+
+    #textMain{
+        columns: #0b0b0b;
+        font-family: mainRegular1;
+        letter-spacing: 0.5px;
+        margin-top: 30px;
+        transition: transform 0.5s ease; /* Add transform property */
+        font-size: 15px;
+    }
+
+    #textMain:hover {
+        transform: translateX(10px); /* Adjust the value to control the rightward movement */
+    }
+
+    #imageContainer {
+        width: 500px;
+        height: 500px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    #imageContainer img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    #section1{
+        height: 250px;
+        background-color: #0b0b0b;
+        margin-top: 25px;
+    }
+}
