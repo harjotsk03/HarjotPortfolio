@@ -537,4 +537,60 @@ nav a:hover {
         background-color: #0b0b0b;
         margin-top: 25px;
     }
+
+    #mainContainerSection1 {
+        border: 3px #6c98ca solid;
+        width: 700px;
+        height: 150px;
+        border-radius: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex; /* Use flexbox for the main container */
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #mainContainerSection1 img {
+        transform: scale(0.2) translateY(0); /* Default state */
+        border: solid white 10px;
+        border-radius: 1000px;
+        margin: -100px;
+        padding: 50px;
+        transition: transform 0.5s ease-in-out; /* Apply the transition property here */
+    }
+    
+    #mainContainerSection1 img:hover {
+        transform: scale(0.2) translateY(0); /* Move 40px up on hover */
+        border: solid white 10px;
+        border-radius: 1000px;
+        margin: -100px;
+        padding: 50px;
+        transition: transform 0.5s ease-in-out; /* Apply the transition property here */
+    }
+    
+    
+    #text{
+        margin-left: -30px;
+        margin-top: 0px;
+    }
+    
+    #mainTextSection1,
+    #mainText2Section1 {
+        color: white;
+        font-family: mainBold;
+        font-size: 25px;
+    }
+    
+    #mainText2Section1 {
+        font-family: mainLight;
+        font-size: 12px;
+        margin-top: 20px; /* Adjusted margin */
+    }
+    
+    #logos{
+        height: 70px;
+        margin-left: 0px;
+        margin-top: 20px;
+        display: inline-flex;
+    }
 }
