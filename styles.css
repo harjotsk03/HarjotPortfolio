@@ -25,7 +25,7 @@ nav {
     justify-content: center;
     align-items: center;
 
-    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(20px); /* Adjust the blur radius as needed */
     padding: 15px;
     position: fixed;
     width: 50%;
@@ -84,8 +84,10 @@ nav a:hover {
 
 }
 
+
 .main-wrapper {
     padding: 40px;
+    padding-top: 130px;
     justify-content: center;
     display: flex;
     align-items: center;
@@ -131,30 +133,10 @@ nav a:hover {
     display: block;
 }
 
-#scroll{
-    color: #3875bb;
-    width: fit-content;
-    font-family: mainRegular;
-    font-size: 20px;
-    letter-spacing: 40px;
-    display: flex;
-    position: absolute;
-    top: 750px;
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Center horizontally */
-    cursor: default;
-    opacity: 1; /* Initial opacity */
-    transition: opacity 0.3s ease-in-out; /* Apply transition for smooth effect */
-}
-
-#scroll.hidden {
-    opacity: 0; /* Set opacity to 0 when hidden */
-}
-
 #section1 {
     height: 440px;
     background-color: #0b0b0b;
-    margin-top: 20px;
+    margin-top: 30px;
     display: flex;
     align-items: center;
     position: relative; /* Added position: relative to establish a positioning context */
@@ -256,8 +238,8 @@ nav a:hover {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-    
-        background-color: rgb(255, 255, 255);
+        backdrop-filter: blur(40px); /* Adjust the blur radius as needed */
+
         padding: 10px;
         position: fixed;
         width: fit-content;
@@ -272,8 +254,7 @@ nav a:hover {
     
     
     nav.blurred {
-        background-color: rgba(225, 225, 225, 0.7); /* Adjust the alpha value for transparency */
-        backdrop-filter: blur(40px); /* Adjust the blur radius as needed */
+        backdrop-filter: blur(20px); /* Adjust the blur radius as needed */
     }
 
     nav button {
@@ -314,19 +295,35 @@ nav a:hover {
     }
 
     .main-wrapper {
+        background-image: url(./keyboardCloseup.png);
         text-align: center;
         justify-content: center;
         display: flex;
         align-items: center;
         padding-top: 200px;
-        margin-left: 12px;
-        margin-right: 12px;
+        margin-left: 0px;
+        margin-right: 0px;
+        z-index: 0;
         position: relative; /* Make the main wrapper a positioning context */
+        background-position: center center; /* Center the background image horizontally and vertically */
+
+    }
+
+    .main-wrapper::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+        height: 100%;
+        background-color: rgba(228, 228, 228, 0.85); /* Adjust the color and opacity as needed */
     }
 
     #mainContainer {
         margin-top: 70px;
         margin-right: 0px;
+        padding-bottom: 200px;
         height: max-content;
         width: 100%; /* Change to 100% to take up the full width */
     }
@@ -370,29 +367,9 @@ nav a:hover {
         display: flex;
     }
 
-    #scroll{
-        color: #3875bb;
-        width: fit-content;
-        font-family: mainRegular;
-        font-size: 20px;
-        letter-spacing: 40px;
-        display: flex;
-        position: absolute;
-        top: 750px;
-        left: 55%; /* Center horizontally */
-        transform: translateX(-50%); /* Center horizontally */
-        cursor: default;
-        opacity: 1; /* Initial opacity */
-        transition: opacity 0.3s ease-in-out; /* Apply transition for smooth effect */
-    }
-    
-    #scroll.hidden {
-        opacity: 0; /* Set opacity to 0 when hidden */
-    }
-
 
     #section1{
-        margin-top: 200px;
+        margin-top: 0px;
         height: 400px;
     }
 
