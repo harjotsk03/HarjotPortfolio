@@ -111,7 +111,7 @@ nav a:hover {
 
 #textMain{
     columns: #0b0b0b;
-    font-family: mainRegular1;
+    font-family: mainRegular;
     letter-spacing: 0.5px;
     margin-top: 40px;
     transition: transform 0.5s ease; /* Add transform property */
@@ -209,10 +209,6 @@ nav a:hover {
     font-size: 10px;
 }
 
-#section2{
-    height: 300px;
-    
-}
 
 #section1About{
     padding-top: 150px;
@@ -226,7 +222,164 @@ nav a:hover {
     letter-spacing: 10px;
 }
 
+#section2{
+    height: 500px;
+    display: flex;
+    background-color: white;
+}
 
+#imageSection2{
+    width: 12%;
+    height: 495px;
+    margin-left: 450px;
+    background-image: url(./phoneImage.png);
+    background-size: 100%;
+}
+
+#imageSection2:hover{
+    transform: scale(0.9);
+}
+
+#textSection2{
+    width: 35%;
+    height: 495px;
+    margin-left: 50px;
+    z-index: 0;
+    padding-top: 40px;
+}
+
+#titleSection2{
+    font-family: mainBold;
+    font-size: 35px;
+    text-align: right;
+}
+
+#mainSection2{
+    font-family: mainRegular1;
+    font-size: 18px;
+    text-align: right;
+    line-height: 30px;
+    margin-top: 10px;
+}
+
+#moreBtn{
+    margin-left: 475px;
+    margin-top: 15px;
+    z-index: -999999;
+}
+
+#moreBtn button {
+    border-radius: 30px;
+    border: solid 2px #3781DB;
+    background-color: transparent;
+    color: #0b0b0b;
+    font-family: mainRegular;
+    letter-spacing: 1px;
+    font-size: 15px;
+    padding: 10px 20px 10px 20px;
+    transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease;
+}
+
+#moreBtn button:hover {
+    cursor: pointer;
+    border: 2px solid #3781DB;
+    background-color: #3781DB;
+    color: white;
+}
+
+
+#section3{
+    height: 600px;
+    background-color: rgb(237, 237, 237);
+    padding: 20px;
+}
+
+#titleProjects{
+    font-size: 35px;
+    font-family: mainBold;
+    width: max-content;
+    margin-left: 20%;
+    margin-right: 80%;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    color: #0b0b0b;
+}
+
+#projectsShow {
+    margin-top: 25px;
+    height: 450px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap: 40px; /* Add 10px gap between flex items */
+}
+
+#projectSection3 {
+    background-color: rgb(222, 222, 222);
+    height: 400px;
+    width: calc(100% / 3);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    transition: filter 0.5s, transform 0.5s;
+}
+
+#projectSection3:hover {
+    transform: scale(0.95);
+    filter: grayscale(0%); /* Fully colored when hovered */
+    cursor: pointer;
+}
+
+#projectSection3:not(:hover) {
+    filter: grayscale(100%); /* Black and white when not hovered */
+}
+
+
+#projectsPage button {
+    border-radius: 30px;
+    border: solid 2px #3781DB;
+    background-color: transparent;
+    color: #0b0b0b;
+    margin-left: 21%;
+    margin-top: -20px;
+    font-family: mainRegular;
+    letter-spacing: 1px;
+    font-size: 15px;
+    padding: 10px 20px 10px 20px;
+    transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease;
+}
+
+#projectsPage button:hover {
+    cursor: pointer;
+    border: 2px solid #3781DB;
+    background-color: #3781DB;
+    color: white;
+}
+
+#section4{
+    height: 200px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+#quote-container {
+    padding: 0px;
+    max-width: 500px;
+}
+
+
+
+
+#footer{
+    height: 90px;
+    background-color: #0b0b0b;
+}
 
 
 
@@ -455,6 +608,139 @@ nav a:hover {
         color: white;
         font-family: mainLight;
         font-size: 10px;
+    }
+
+    #section2{
+        height: 650px;
+        width: 100%;
+        overflow: hidden;
+        background-color: azure;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    
+    #imageSection2{
+        display: none;
+        width: 12%;
+        height: 495px;
+        background-image: url(./phoneImage.png);
+        background-size: 100%;
+    }
+
+    
+    #textSection2{
+        width: 90%;
+        height: 495px;
+        z-index: 999999;
+        margin-left: 0px;
+        margin-top: -140px;
+    }
+    
+    #titleSection2{
+        font-family: mainBold;
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    #mainSection2{
+        font-family: mainRegular1;
+        font-size: 15px;
+        text-align: center;
+    }
+    
+    #moreBtn{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #moreBtn button {
+        border-radius: 30px;
+        border: solid 2px #3781DB;
+        background-color: transparent;
+        color: #0b0b0b;
+        font-family: mainRegular;
+        letter-spacing: 1px;
+        font-size: 15px;
+        padding: 10px 20px 10px 20px;
+        transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease;
+    }
+    
+    #moreBtn button:hover {
+        cursor: pointer;
+        border: 2px solid #3781DB;
+        background-color: #3781DB;
+        color: white;
+    }
+
+
+
+    #section3{
+        height: 300px;
+        background-color: rgb(237, 237, 237);
+        padding: 20px;
+        width: 90%;
+        overflow: hidden;
+    }
+
+    #titleProjects{
+        font-size: 25px;
+        font-family: mainBold;
+        width: max-content;
+        text-align: center;
+        margin-top: 20px;
+        letter-spacing: 1px;
+        color: #0b0b0b;
+    }
+
+    #projectsShow {
+        margin-top: 25px;
+        height: 250px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        gap: 10px; /* Add 10px gap between flex items */
+    }
+
+    #projectSection3 {
+        background-color: rgb(222, 222, 222);
+        height: 200px;
+        width: calc(100% / 3);
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        transition: filter 0.5s, transform 0.5s;
+    }
+
+    #projectSection3 img{
+        transform: scale(0.5);
+    }
+
+    #projectSection3:hover {
+        transform: scale(1);
+        filter: grayscale(0%); /* Fully colored when hovered */
+        cursor: default;
+    }
+
+    #projectSection3:not(:hover) {
+        filter: grayscale(0%); /* Black and white when not hovered */
+    }
+
+
+    #projectsPage button {
+        display: none;
+        border-radius: 30px;
+        border: solid 2px #3781DB;
+        background-color: transparent;
+        color: #0b0b0b;
+        font-family: mainRegular;
+        letter-spacing: 1px;
+        font-size: 15px;
+        padding: 10px 20px 10px 20px;
+        transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease;
     }
 
 }
