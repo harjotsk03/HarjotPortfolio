@@ -223,25 +223,33 @@ nav a:hover {
 }
 
 #section2{
-    height: 500px;
+    height: 550px;
     display: flex;
     background-color: white;
+    justify-content: center;
+    align-items: center;
 }
 
-#imageSection2{
-    width: 12%;
-    height: 495px;
-    margin-left: 450px;
-    background-image: url(./phoneImage.png);
-    background-size: 100%;
+#imageSection2 {
+    width: max-content;
+    border: solid red;
+    height: 550px;
+    overflow: hidden;
 }
+
+#imageSection2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
 
 #imageSection2:hover{
     transform: scale(0.9);
 }
 
 #textSection2{
-    width: 35%;
+    width: 48%;
     height: 495px;
     margin-left: 50px;
     z-index: 0;
@@ -263,7 +271,8 @@ nav a:hover {
 }
 
 #moreBtn{
-    margin-left: 475px;
+    float: right;
+    width: max-content;
     margin-top: 15px;
     z-index: -999999;
 }
@@ -492,7 +501,6 @@ nav a:hover {
         justify-content: center;
         align-items: center;
         backdrop-filter: blur(40px); /* Adjust the blur radius as needed */
-
         padding: 10px;
         position: fixed;
         width: fit-content;
@@ -507,11 +515,12 @@ nav a:hover {
     
     
     nav.blurred {
-        backdrop-filter: blur(20px); /* Adjust the blur radius as needed */
+        z-index: 99999999;
+        backdrop-filter: blur(40px); /* Adjust the blur radius as needed */
     }
 
     nav button {
-        background-color: transparent;
+        
         border: none;
         font-family: mainRegular;
         font-size: 10px;
@@ -698,12 +707,10 @@ nav a:hover {
     }
 
     #section2{
-        height: 650px;
-        width: 100%;
-        overflow: hidden;
-        background-color: azure;
+        height: 600px;
+        display: flex;
+        background-color: white;
         justify-content: center;
-        text-align: center;
         align-items: center;
     }
     
@@ -718,10 +725,9 @@ nav a:hover {
     
     #textSection2{
         width: 90%;
-        height: 495px;
+        height: max-content;
         z-index: 999999;
         margin-left: 0px;
-        margin-top: -140px;
     }
     
     #titleSection2{
@@ -737,6 +743,7 @@ nav a:hover {
     }
     
     #moreBtn{
+        float: none;
         margin-left: auto;
         margin-right: auto;
     }
