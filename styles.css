@@ -231,10 +231,9 @@ nav a:hover {
 }
 
 #imageSection2 {
-    width: max-content;
-    border: solid red;
     height: 550px;
     overflow: hidden;
+    width: fit-content;
 }
 
 #imageSection2 img {
@@ -303,7 +302,7 @@ nav a:hover {
     padding: 20px;
 }
 
-#titleProjects{
+#section3-container h2 {
     font-size: 35px;
     font-family: mainBold;
     width: max-content;
@@ -421,35 +420,6 @@ nav a:hover {
 }
 
 
-#footer{
-    height: 70px;
-    background-color: #0b0b0b;
-    padding: 20px;
-    overflow: hidden;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-#containerFooter {
-    width: max-content;
-    height: max-content;
-    display: flex;
-    flex-direction: column; /* Stack children vertically */
-    justify-content: center;
-    align-items: center;
-}
-
-#nameFooter {
-    font-family: mainRegular1;
-    color: #e0e0e0;
-    cursor: default;
-}
-
-#nameFooter:hover {
-    cursor: pointer;
-    color: rgb(167, 167, 167);
-}
-
 #socialIcons {
     display: flex;
     gap: 30px;
@@ -481,9 +451,34 @@ nav a:hover {
 }
 
 
+#footer{
+    height: 70px;
+    background-color: #0b0b0b;
+    padding: 20px;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#containerFooter {
+    width: max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center;
+    align-items: center;
+}
 
+#nameFooter {
+    font-family: mainRegular1;
+    color: #e0e0e0;
+    cursor: default;
+}
 
-
+#nameFooter:hover {
+    cursor: pointer;
+    color: rgb(167, 167, 167);
+}
 
 
 
@@ -494,6 +489,7 @@ nav a:hover {
 
 
 @media screen and (max-width: 1200px) {
+
 
     nav {
         display: flex;
@@ -517,6 +513,7 @@ nav a:hover {
     nav.blurred {
         z-index: 99999999;
         backdrop-filter: blur(40px); /* Adjust the blur radius as needed */
+
     }
 
     nav button {
@@ -612,6 +609,7 @@ nav a:hover {
     }
 
     #imageContainer {
+        overflow: hidden;
         display: none;
         z-index: 1; /* Ensure the image container is above other elements */
         width: 150px; /* Set the initial width */
@@ -707,7 +705,8 @@ nav a:hover {
     }
 
     #section2{
-        height: 600px;
+        height: max-content;
+        padding: 20px;
         display: flex;
         background-color: white;
         justify-content: center;
@@ -716,7 +715,7 @@ nav a:hover {
     
     #imageSection2{
         display: none;
-        width: 12%;
+        width: 100%;
         height: 495px;
         background-image: url(./phoneImage.png);
         background-size: 100%;
@@ -770,22 +769,31 @@ nav a:hover {
 
 
     #section3{
-        height: 300px;
-        background-color: rgb(237, 237, 237);
-        padding: 20px;
-        width: 90%;
         overflow: hidden;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        display: flex;
     }
 
-    #titleProjects{
-        font-size: 25px;
-        font-family: mainBold;
-        width: max-content;
-        text-align: center;
-        margin-top: 20px;
-        letter-spacing: 1px;
-        color: #0b0b0b;
+    #section3-container {
+        padding: 0px;
+        width: 90%;
     }
+
+
+    #section3-container h2{
+        font-family: mainBold;
+        font-size: 25px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 
     #projectsShow {
         margin-top: 25px;
@@ -888,6 +896,36 @@ nav a:hover {
         border: 2px solid #3781DB;
         background-color: transparent;
         color: #0b0b0b;
+    }
+
+
+    #footer{
+        height: 70px;
+        background-color: #0b0b0b;
+        padding: 20px;
+        overflow: hidden;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #containerFooter {
+        width: max-content;
+        height: max-content;
+        display: flex;
+        flex-direction: column; /* Stack children vertically */
+        justify-content: center;
+        align-items: center;
+    }
+
+    #nameFooter {
+        font-family: mainRegular1;
+        color: #e0e0e0;
+        cursor: default;
+    }
+
+    #nameFooter:hover {
+        cursor: pointer;
+        color: rgb(167, 167, 167);
     }
 
 }
