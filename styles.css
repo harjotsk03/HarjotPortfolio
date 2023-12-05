@@ -490,13 +490,25 @@ nav a:hover {
 
 @media screen and (max-width: 1200px) {
 
+    *{
+        overflow-x: hidden;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    html{
+        overflow-x: hidden;
+    }
 
     nav {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        backdrop-filter: blur(40px); /* Adjust the blur radius as needed */
+        background-color: transparent;
+        backdrop-filter: blur(0px); /* Adjust the blur radius as needed */
         padding: 10px;
         position: fixed;
         width: fit-content;
@@ -512,7 +524,8 @@ nav a:hover {
     
     nav.blurred {
         z-index: 99999999;
-        backdrop-filter: blur(40px); /* Adjust the blur radius as needed */
+
+        background-color: white;
 
     }
 
