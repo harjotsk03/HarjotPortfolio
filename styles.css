@@ -17,6 +17,7 @@
 
 * {
     margin: 0;
+    
 }
 
 nav {
@@ -189,29 +190,41 @@ nav a:hover {
     margin-top: 20px; /* Adjusted margin */
 }
 
+#logo{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 #logos {
     height: 130px;
     margin-right: -40px;
     display: inline-flex;
 }
 
+#logos p{
+    margin-top: -20px;
+    color: white;
+    font-family: mainLight;
+    font-size: 10px;
+}
 
-  #section2{
+#section2{
     height: 300px;
     
-  }
+}
 
-  #section1About{
+#section1About{
     padding-top: 150px;
     height: 400px;
-  }
+}
 
-  #aboutMain{
+#aboutMain{
     font-family: mainBold;
     font-size: 30px;
     text-align: center;
     letter-spacing: 10px;
-  }
+}
 
 
 
@@ -370,36 +383,37 @@ nav a:hover {
 
     #section1{
         margin-top: 0px;
-        height: 400px;
+        height: 500px;
     }
 
     #mainContainerSection1 {
         border: 3px #6c98ca solid;
         width: 300px;
-        height: 270px;
+        height: 300px;
         border-radius: 15px;
         margin-left: auto;
         margin-right: auto;
         display: block; /* Use flexbox for the main container */
         align-items: center;
         justify-content: center;
+        overflow: hidden;
     }
     
     #mainContainerSection1 img {
-        transform: scale(0.2) translateY(0); /* Default state */
+        transform: scale(0.15) translateY(0); /* Default state */
         border: solid white 10px;
         border-radius: 1000px;
         margin: -100px;
-        padding: 50px;
+        padding: 30px;
         transition: transform 0.5s ease-in-out; /* Apply the transition property here */
     }
     
     #mainContainerSection1 img:hover {
-        transform: scale(0.2) translateY(0); /* Move 40px up on hover */
+        transform: scale(0.15) translateY(0); /* Move 40px up on hover */
         border: solid white 10px;
         border-radius: 1000px;
         margin: -100px;
-        padding: 50px;
+        padding: 30px;
         transition: transform 0.5s ease-in-out; /* Apply the transition property here */
     }
     
@@ -422,11 +436,25 @@ nav a:hover {
         margin-top: 20px; /* Adjusted margin */
     }
     
+
+    #logo{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
     #logos{
-        height: 70px;
+        height: 40px;
         margin-left: 20px;
         margin-top: 20px;
         display: inline-flex;
+    }
+    
+    #logos p{
+        margin-top: -10px;
+        color: white;
+        font-family: mainLight;
+        font-size: 10px;
     }
 
 }
