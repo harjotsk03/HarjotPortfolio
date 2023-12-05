@@ -8,15 +8,39 @@
     </head>
     <body>
       
-        <nav>
-          <button type="button"><a href="index.html" >HOME</a></button>
-          <button type="button"><a href="about.html" >ABOUT</a></button>
-          <button type="button"><a href="projects.html" id="active">PROJECTS</a></button>
-          <button type="button"><a href="contact.html">CONTACT</a></button>
-        </nav>
+      <nav id="navbar">
+        <button type="button"><a href="index.html" >HOME</a></button>
+        <button type="button"><a href="about.html" >ABOUT</a></button>
+        <button type="button"><a href="projects.html" id="active">PROJECTS</a></button>
+        <button type="button"><a href="contact.html">CONTACT</a></button>
+      </nav>
+
+      <div id="section1About">
+        <div id="aboutMain">
+          COMING SOON!!
+        </div>
+      </div>
+
+
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
           AOS.init();
+        </script>
+
+        <script>
+          // JavaScript to add/remove the 'blurred' class based on scroll position
+            document.addEventListener('DOMContentLoaded', function () {
+                var navbar = document.getElementById('navbar1');
+                var scrollThreshold = 30; // Adjust this value based on when you want the blur effect to start
+
+                window.addEventListener('scroll', function () {
+                    if (window.scrollY > scrollThreshold) {
+                        navbar.classList.add('blurred');
+                    } else {
+                        navbar.classList.remove('blurred');
+                    }
+                });
+            });
         </script>
     </body>
 </html>

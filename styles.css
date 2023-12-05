@@ -34,9 +34,10 @@ nav {
     transition: background-color 0.3s ease;
     z-index: 1000;
     border-radius: 50px;
-    margin-top: -40px;
+    margin-top: 10px;
     height: 40px;
 }
+
 
 
 nav.blurred {
@@ -84,7 +85,7 @@ nav a:hover {
 }
 
 .main-wrapper {
-    margin-top: 60px;
+    padding: 40px;
     justify-content: center;
     display: flex;
     align-items: center;
@@ -130,12 +131,33 @@ nav a:hover {
     display: block;
 }
 
+#scroll{
+    color: #3875bb;
+    width: fit-content;
+    font-family: mainRegular;
+    font-size: 20px;
+    letter-spacing: 40px;
+    display: flex;
+    position: absolute;
+    top: 750px;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    cursor: default;
+    opacity: 1; /* Initial opacity */
+    transition: opacity 0.3s ease-in-out; /* Apply transition for smooth effect */
+}
+
+#scroll.hidden {
+    opacity: 0; /* Set opacity to 0 when hidden */
+}
+
 #section1 {
     height: 440px;
     background-color: #0b0b0b;
-    margin-top: -10px;
+    margin-top: 20px;
     display: flex;
     align-items: center;
+    position: relative; /* Added position: relative to establish a positioning context */
 }
 
 #mainContainerSection1 {
@@ -168,8 +190,7 @@ nav a:hover {
     transition: transform 0.5s ease-in-out; /* Apply the transition property here */
 }
 
-
-#text{
+#text {
     margin-right: 40px;
 }
 
@@ -186,7 +207,7 @@ nav a:hover {
     margin-top: 20px; /* Adjusted margin */
 }
 
-#logos{
+#logos {
     height: 130px;
     margin-right: -40px;
     display: inline-flex;
@@ -198,6 +219,17 @@ nav a:hover {
     
   }
 
+  #section1About{
+    padding-top: 150px;
+    height: 400px;
+  }
+
+  #aboutMain{
+    font-family: mainBold;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 10px;
+  }
 
 
 
@@ -234,7 +266,7 @@ nav a:hover {
         transition: background-color 0.3s ease;
         z-index: 1000;
         border-radius: 50px;
-        margin-top: -110px;
+        margin-top: 10px;
         height: 20px;
     }
     
@@ -286,7 +318,7 @@ nav a:hover {
         justify-content: center;
         display: flex;
         align-items: center;
-        margin-top: 130px;
+        padding-top: 200px;
         margin-left: 12px;
         margin-right: 12px;
         position: relative; /* Make the main wrapper a positioning context */
@@ -338,9 +370,29 @@ nav a:hover {
         display: flex;
     }
 
+    #scroll{
+        color: #3875bb;
+        width: fit-content;
+        font-family: mainRegular;
+        font-size: 20px;
+        letter-spacing: 40px;
+        display: flex;
+        position: absolute;
+        top: 750px;
+        left: 55%; /* Center horizontally */
+        transform: translateX(-50%); /* Center horizontally */
+        cursor: default;
+        opacity: 1; /* Initial opacity */
+        transition: opacity 0.3s ease-in-out; /* Apply transition for smooth effect */
+    }
+    
+    #scroll.hidden {
+        opacity: 0; /* Set opacity to 0 when hidden */
+    }
+
 
     #section1{
-        margin-top: 150px;
+        margin-top: 200px;
         height: 400px;
     }
 
