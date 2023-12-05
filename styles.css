@@ -490,9 +490,7 @@ nav a:hover {
 
 @media screen and (max-width: 1200px) {
 
-    *{
-        overflow-x: hidden;
-    }
+
 
     body{
         overflow-x: hidden;
