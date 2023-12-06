@@ -16,8 +16,7 @@
 }
 
 * {
-    margin: 0;
-    
+    margin: 0;   
 }
 
 nav {
@@ -25,8 +24,8 @@ nav {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
-    backdrop-filter: blur(20px); /* Adjust the blur radius as needed */
+    background-color: white;
+    backdrop-filter: blur(0px); /* Adjust the blur radius as needed */
     padding: 15px;
     position: fixed;
     width: 50%;
@@ -35,7 +34,7 @@ nav {
     transition: background-color 0.3s ease;
     z-index: 1000;
     border-radius: 50px;
-    margin-top: 10px;
+    margin-top: 15px;
     height: 40px;
 }
 
@@ -88,7 +87,7 @@ nav a:hover {
 
 .main-wrapper {
     padding: 40px;
-    padding-top: 130px;
+    padding-top: 80px;
     justify-content: center;
     display: flex;
     align-items: center;
@@ -142,6 +141,8 @@ nav a:hover {
     align-items: center;
     position: relative; /* Added position: relative to establish a positioning context */
 }
+
+
 
 #mainContainerSection1 {
     border: 3px #6c98ca solid;
@@ -451,6 +452,116 @@ nav a:hover {
 }
 
 
+#pagesTitle {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+    z-index: 1; /* Above the circle */
+}
+
+#pagesTitle h2 {
+    font-family: mainBold;
+    font-size: 55px;
+    color: #0b0b0b; /* Ensure the text is readable */
+}
+
+#aboutMainContainer{
+    overflow: hidden;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+#aboutTextMain{
+    width: calc(100%/1.5);
+    line-height: 30px;
+    padding-top: calc(100% / 50);
+    text-align: left;
+}
+
+#aboutTextMain p{
+    font-family: mainRegular1;
+    font-size: 18px;
+}
+
+
+#aboutMainContainer1{
+    height: max-content;
+    background-color: #0b0b0b;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Updated to stack containers vertically */
+    position: relative; /* Added position: relative to establish a positioning context */
+}
+
+#mainContainerAbout1{
+    margin-top: 30px;
+    border: 3px #6c98ca solid;
+    width: calc(100%  1.2);
+    height: max-content;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+#mainContainerAbout2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 3px #6c98ca solid;
+    width: calc(100%  1.2);
+    height: max-content;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#progressContainer{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between; /* Adjust this property as needed */
+}
+
+#progressContainer span{
+    margin-top: 20px;
+}
+
+#each{
+    display: block;
+    text-align: center;
+    font-family: mainRegular;
+    color: white;
+}
+
+
+
+#mainTextAbout1,
+#mainText2About1 {
+    color: white;
+    font-family: mainBold;
+    font-size: 35px;
+
+    width: 100%;
+}
+
+#mainText2About1 {
+    font-family: mainLight;
+    font-size: 15px;
+    margin-top: 5px; /* Adjusted margin */
+}
+
+
+
 #footer{
     height: 70px;
     background-color: #0b0b0b;
@@ -505,7 +616,7 @@ nav a:hover {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        background-color: transparent;
+        background-color: white;
         backdrop-filter: blur(0px); /* Adjust the blur radius as needed */
         padding: 10px;
         position: fixed;
@@ -909,6 +1020,126 @@ nav a:hover {
         color: #0b0b0b;
     }
 
+
+
+
+
+
+
+    #pagesTitle {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding-top: 70px;
+        z-index: 1; /* Above the circle */
+    }
+    
+    #pagesTitle h2 {
+        font-family: mainBold;
+        font-size: 40px;
+        color: #0b0b0b; /* Ensure the text is readable */
+    }
+
+
+
+    #aboutMainContainer{
+        overflow: hidden;
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #aboutTextMain{
+        width: calc(100%/1.5);
+        line-height: 30px;
+        padding-top: calc(100% / 50);
+        text-align: center;
+    }
+    
+    #aboutTextMain p{
+        font-family: mainRegular1;
+        font-size: 15px;
+    }
+    
+    
+    #aboutMainContainer1{
+        height: max-content;
+        background-color: #0b0b0b;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        flex-direction: column; /* Updated to stack containers vertically */
+        position: relative; /* Added position: relative to establish a positioning context */
+    }
+    
+    #mainContainerAbout1{
+        margin-top: 30px;
+        border: 3px #6c98ca solid;
+        width: calc(100% / 1.2);
+        overflow: hidden;
+        height: max-content;
+        border-radius: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    #mainContainerAbout2{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        border: 3px #6c98ca solid;
+        width: calc(100%  / 1.2);
+        height: max-content;
+        border-radius: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    
+    #progressContainer{
+        margin-top: 20px;
+        display: flex;
+        flex-direction:row; /* Stack children vertically */
+        justify-content:center; /* Adjust this property as needed */
+        flex-wrap: wrap; /* Allow items to wrap to the next line */
+    }
+    
+    
+    #each{
+        width: max-content;
+        display: block;
+        text-align: center;
+        font-family: mainRegular;
+        color: white;
+    }
+    
+    
+    
+    #mainTextAbout1,
+    #mainText2About1 {
+        color: white;
+        font-family: mainBold;
+        font-size: 35px;
+    
+        width: 100%;
+    }
+    
+    #mainText2About1 {
+        font-family: mainLight;
+        font-size: 15px;
+        margin-top: 5px; /* Adjusted margin */
+    }
+    
+    
 
     #footer{
         height: 70px;

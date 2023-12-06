@@ -1,0 +1,240 @@
+@font-face {
+    font-family: mainRegular;
+    src: url(./PrimeformProDemo-SemiBold.otf);
+}
+@font-face {
+    font-family: mainLight;
+    src: url(./PrimeformProDemo-Light.otf);
+}
+@font-face {
+    font-family: mainBold;
+    src: url(./PrimeformProDemo-Bold.otf);
+}
+@font-face {
+    font-family: mainRegular1;
+    src: url(./PrimeformProDemo-Regular.otf);
+}
+
+* {
+    margin: 0;   
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    backdrop-filter: blur(20px); /* Adjust the blur radius as needed */
+    padding: 15px;
+    position: fixed;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+    border-radius: 50px;
+    margin-top: 10px;
+    height: 40px;
+}
+
+
+
+nav.blurred {
+    background-color: rgba(225, 225, 225, 0.5); /* Adjust the alpha value for transparency */
+    backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
+}
+
+nav button {
+    background-color: transparent;
+    border: none;
+    font-family: mainRegular;
+    font-size: 20px;
+    margin: 30px 30px 30px 30px;
+}
+
+nav a {
+    color: #0b0b0b;
+    text-decoration: none;
+    transition: color 0.4s ease, transform 0.5s ease; /* Add transform property */
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    display: inline-block; /* Needed for vertical alignment */
+}
+
+nav #active {
+    color: #3875bb;
+    font-family: mainBold;
+}
+
+nav a:hover {
+    color: #3781DB;
+    transform: translateY(-5px); /* Adjust the value to control the upward movement */
+}
+
+
+
+
+#aboutPage{
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(186,217,255,1) 48%, rgba(55,129,219,1) 100%);
+}
+
+
+
+
+
+
+
+
+#footer{
+    height: 70px;
+    background-color: #0b0b0b;
+    padding: 20px;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#containerFooter {
+    width: max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center;
+    align-items: center;
+}
+
+#nameFooter {
+    font-family: mainRegular1;
+    color: #e0e0e0;
+    cursor: default;
+}
+
+#nameFooter:hover {
+    cursor: pointer;
+    color: rgb(167, 167, 167);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+
+
+
+    body{
+        overflow-x: hidden;
+    }
+
+    html{
+        overflow-x: hidden;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        backdrop-filter: blur(0px); /* Adjust the blur radius as needed */
+        padding: 10px;
+        position: fixed;
+        width: fit-content;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: background-color 0.3s ease;
+        z-index: 1000;
+        border-radius: 50px;
+        margin-top: 10px;
+        height: 20px;
+    }
+    
+    
+    nav.blurred {
+        z-index: 99999999;
+
+        background-color: white;
+
+    }
+
+    nav button {
+        
+        border: none;
+        font-family: mainRegular;
+        font-size: 10px;
+        margin: 2px;
+    }
+
+    nav a {
+        color: #1e1e1e;
+        text-decoration: none;
+        transition: color 0.4s ease, transform 0.5s ease;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        display: inline-block;
+    }
+
+    nav #active {
+        color: #3875bb;
+        font-family: mainBold;
+    }
+
+    nav a:hover {
+        color: #1e1e1e;
+        transform: translateY(0px);
+    }
+
+
+
+
+    #footer{
+        height: 70px;
+        background-color: #0b0b0b;
+        padding: 20px;
+        overflow: hidden;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #containerFooter {
+        width: max-content;
+        height: max-content;
+        display: flex;
+        flex-direction: column; /* Stack children vertically */
+        justify-content: center;
+        align-items: center;
+    }
+
+    #nameFooter {
+        font-family: mainRegular1;
+        color: #e0e0e0;
+        cursor: default;
+    }
+
+    #nameFooter:hover {
+        cursor: pointer;
+        color: rgb(167, 167, 167);
+    }
+
+}
