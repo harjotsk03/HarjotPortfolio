@@ -501,7 +501,7 @@ nav a:hover {
 #mainContainerAbout1{
     margin-top: 30px;
     border: 3px #6c98ca solid;
-    width: calc(100%  1.2);
+    width: calc(100% / 1.8);
     height: max-content;
     border-radius: 15px;
     margin-left: auto;
@@ -515,7 +515,7 @@ nav a:hover {
     margin-top: 30px;
     margin-bottom: 30px;
     border: 3px #6c98ca solid;
-    width: calc(100%  1.2);
+    width: calc(100% / 1.8);
     height: max-content;
     border-radius: 15px;
     margin-left: auto;
@@ -550,7 +550,6 @@ nav a:hover {
     color: white;
     font-family: mainBold;
     font-size: 35px;
-
     width: 100%;
 }
 
@@ -559,6 +558,246 @@ nav a:hover {
     font-size: 15px;
     margin-top: 5px; /* Adjusted margin */
 }
+
+
+
+#skillsContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap ;
+    width: calc(100% - 50px); /* 25% to have 4 items per row initially */
+
+}
+
+.skillBox {
+    margin-top: 20px;
+    width: fit-content;
+    padding: 10px 20px 10px 20px;
+    align-items: center;
+    height: fit-content;
+    background-color: #1e1e1e;
+    color: white;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 10px;
+    margin-right: 10px;
+    font-size: 15px;
+    font-family: mainRegular;
+    letter-spacing: 1px;
+}
+
+.skillBox:hover {
+    background-color: #3875bb;
+}
+
+
+
+#section3About{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap ;
+    gap: 30px;
+    padding: 30px;
+    width: calc(100% - 60px); /* 25% to have 4 items per row initially */    
+}
+
+#section3About h2{
+    font-family: mainBold;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+
+
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin: 20px auto;
+    height: 500px;
+    width: 400px;
+    border-radius: 20px;
+}
+
+.slider-wrapper {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden; /* Ensure the image doesn't overflow the container */
+
+}
+
+.slide img {
+    width: 100%;
+    object-fit: cover; /* Ensure the image covers the entire container without stretching */
+    display: block;
+}
+
+.slider-container button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    color: #fff;
+    border: none;
+    padding: 5px 10px 5px 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#prevBtn {
+    left: 20px;
+}
+
+#nextBtn {
+    right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slider-container2 {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin: 20px auto;
+    height: 500px;
+    width: 400px;
+    border-radius: 20px;
+}
+
+.slider-wrapper2 {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    
+}
+
+.slide2 {
+    min-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden; /* Ensure the image doesn't overflow the container */
+
+}
+
+.slide2 img {
+    width: 100%;
+    object-fit: cover; /* Ensure the image covers the entire container without stretching */
+    display: block;
+}
+
+.slider-container2 button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    color: #fff;
+    border: none;
+    padding: 5px 10px 5px 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#prevBtn2 {
+    left: 20px;
+}
+
+#nextBtn2 {
+    right: 20px;
+}
+
+
+
+
+
+
+
+.slider-container3 {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin: 20px auto;
+    height: 500px;
+    width: 400px;
+    border-radius: 20px;
+}
+
+.slider-wrapper3 {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    
+}
+
+.slide3 {
+    min-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden; /* Ensure the image doesn't overflow the container */
+
+}
+
+.slide3 img {
+    width: 100%;
+    object-fit: cover; /* Ensure the image covers the entire container without stretching */
+    display: block;
+}
+
+.slider-container3 button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    color: #fff;
+    border: none;
+    padding: 5px 10px 5px 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#prevBtn3 {
+    left: 20px;
+}
+
+#nextBtn3 {
+    right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1138,7 +1377,62 @@ nav a:hover {
         font-size: 15px;
         margin-top: 5px; /* Adjusted margin */
     }
-    
+
+
+
+
+
+    #skillsContainer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap ;
+        width: calc(100% - 0px); /* 25% to have 4 items per row initially */
+
+    }
+
+    .skillBox {
+        margin-top: 20px;
+        width: fit-content;
+        padding: 10px 20px 10px 20px;
+        align-items: center;
+        height: fit-content;
+        background-color: #1e1e1e;
+        color: white;
+        text-align: center;
+        line-height: 20px;
+        border-radius: 10px;
+        margin-right: 10px;
+        font-size: 15px;
+        font-family: mainRegular;
+        letter-spacing: 1px;
+    }
+
+    .skillBox:hover {
+        background-color: #1e1e1e;
+    }
+
+
+
+
+    #section3About{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap ;
+        gap: 30px;
+        padding: 30px;
+        width: calc(100% - 60px); /* 25% to have 4 items per row initially */    
+    }
+
+    #section3About h2{
+        font-family: mainBold;
+        margin-left: 10px;
+        margin-bottom: 5px;
+    }
+
+
+        
     
 
     #footer{

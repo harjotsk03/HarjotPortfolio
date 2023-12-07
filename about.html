@@ -181,11 +181,9 @@
                     I truely beleive my biggests strenghts lie<br> within my personal skills; I thrive in team environments and love 
                     to crack a problem and find a creative solution.
                 </div>
-            </div>
-              
-              
-            <div id="progressContainer">
-              
+                <div id="skillsContainer">
+
+                </div>
             </div>
           </div>
 
@@ -195,6 +193,88 @@
 
 
         </div>
+
+
+        <div id="section3About">
+          <div class="slider-container"
+          data-aos="zoom-in"
+                      data-aos-offset="0"
+                      data-aos-delay="300"
+                      data-aos-duration="1000"
+                      data-aos-easing="ease-in-out"
+                      data-aos-mirror="true"
+                      data-aos-once="true">
+            <H2>BRUNO</H2>
+            <div class="slider-wrapper">
+                <div class="slide">
+                  <img style="transform: translateY(120px) translateX(50px) scale(2);" src="./bruno3.jpeg" alt="Bruno Baby">
+                </div>
+                <div class="slide">
+                  <img style="transform: translateY(-150px) scale(1);" src="./bruno1.jpeg" alt="Bruno at Dog Park">
+                </div>
+                <div class="slide">
+                  <img style="transform: translateY(0px) scale(1);" src="./bruno2.jpeg" alt="Bruno Chewing Bone">
+                </div>
+                <div class="slide">
+                  <img style="transform: translateY(0px) translateX(0px) scale(1);" src="./bruno4.jpeg" alt="Bruno with Harjot">
+                </div>
+            </div>
+            <button id="prevBtn" onclick="prevSlide()">❮</button>
+            <button id="nextBtn" onclick="nextSlide()">❯</button>
+          </div>
+
+
+
+          <div class="slider-container2"
+          data-aos="zoom-in"
+                      data-aos-offset="0"
+                      data-aos-delay="300"
+                      data-aos-duration="1000"
+                      data-aos-easing="ease-in-out"
+                      data-aos-mirror="true"
+                      data-aos-once="true">
+            <h2>FOOTBALL</h2>
+            <div class="slider-wrapper2">
+                <div class="slide2">
+                  <img style="transform: translateY(0px) translateX(0px) scale(1);" src="./soccer1.jpeg" alt="Bruno with Harjot">
+                </div>
+                <div class="slide2">
+                  <img style="transform: translateY(0px) translateX(0px) scale(1);" src="./soccer2.jpeg" alt="Bruno with Harjot">
+                </div>
+                <div class="slide2">
+                  <img style="transform: translateY(0px) translateX(0px) scale(1);" src="./soccer3.jpeg" alt="Bruno with Harjot">
+                </div>
+            </div>
+            <button id="prevBtn2" onclick="prevSlide2()">❮</button>
+            <button id="nextBtn2" onclick="nextSlide2()">❯</button>
+          </div>
+
+
+          <div class="slider-container3"
+          data-aos="zoom-in"
+                      data-aos-offset="0"
+                      data-aos-delay="300"
+                      data-aos-duration="1000"
+                      data-aos-easing="ease-in-out"
+                      data-aos-mirror="true"
+                      data-aos-once="true">
+            <h2>SNOWBOARDING</h2>
+            <div class="slider-wrapper3">
+                <div class="slide3">
+                  <img style="transform: translateY(0px) translateX(0px) scale(1);" src="./snowboard1.jpeg" alt="Bruno with Harjot">
+                </div>
+                <div class="slide3">
+                  <img style="transform: translateY(0px) translateX(0px) scale(1);" src="./snowboard2.jpeg" alt="Bruno with Harjot">
+                </div>
+                <div class="slide3">
+                  <img style="transform: translateY(0px) translateX(0px) scale(1);" src="./snowboard3.jpeg" alt="Bruno with Harjot">
+                </div>
+            </div>
+            <button id="prevBtn3" onclick="prevSlide3()">❮</button>
+            <button id="nextBtn3" onclick="nextSlide3()">❯</button>
+          </div>
+        </div>
+
 
 
         <div id="footer">
@@ -226,6 +306,114 @@
         </div>
         
 
+        
+        <script>
+          let currentIndex = 0;
+
+          function showSlide(index) {
+              const sliderWrapper = document.querySelector('.slider-wrapper');
+              const slides = document.querySelectorAll('.slide');
+              const totalSlides = slides.length;
+
+              if (index < 0) {
+                  currentIndex = totalSlides - 1;
+              } else if (index >= totalSlides) {
+                  currentIndex = 0;
+              } else {
+                  currentIndex = index;
+              }
+
+              const translateValue = -currentIndex * 100 + '%';
+              sliderWrapper.style.transform = 'translateX(' + translateValue + ')';
+          }
+
+          function prevSlide() {
+              showSlide(currentIndex - 1);
+          }
+
+          function nextSlide() {
+              showSlide(currentIndex + 1);
+          }
+
+        </script>
+        <script>
+          let currentIndex2 = 0;
+
+          function showSlide2(index2) {
+              const sliderWrapper2 = document.querySelector('.slider-wrapper2');
+              const slides2 = document.querySelectorAll('.slide2');
+              const totalSlides2 = slides2.length;
+
+              if (index2 < 0) {
+                  currentIndex2 = totalSlides2 - 1;
+              } else if (index2 >= totalSlides2) {
+                  currentIndex2 = 0;
+              } else {
+                  currentIndex2 = index2;
+              }
+
+              const translateValue2 = -currentIndex2 * 100 + '%';
+              sliderWrapper2.style.transform = 'translateX(' + translateValue2 + ')';
+          }
+
+          function prevSlide2() {
+              showSlide2(currentIndex2 - 1);
+          }
+
+          function nextSlide2() {
+              showSlide2(currentIndex2 + 1);
+          }
+
+        </script>
+        <script>
+          let currentIndex3 = 0;
+
+          function showSlide3(index3) {
+              const sliderWrapper3 = document.querySelector('.slider-wrapper3');
+              const slides3 = document.querySelectorAll('.slide3');
+              const totalSlides3 = slides3.length;
+
+              if (index3 < 0) {
+                  currentIndex3 = totalSlides3 - 1;
+              } else if (index3 >= totalSlides3) {
+                  currentIndex3 = 0;
+              } else {
+                  currentIndex3 = index3;
+              }
+
+              const translateValue3 = -currentIndex3 * 100 + '%';
+              sliderWrapper3.style.transform = 'translateX(' + translateValue3 + ')';
+          }
+
+          function prevSlide3() {
+              showSlide3(currentIndex3 - 1);
+          }
+
+          function nextSlide3() {
+              showSlide3(currentIndex3 + 1);
+          }
+
+        </script>
+
+        <script>
+          document.addEventListener('DOMContentLoaded', function () {
+            const skillsContainer = document.getElementById('skillsContainer');
+
+            // Sample skills, you can replace this array with your actual skills
+            const skills = ['Communication', 'Teamwork', 'Problem-Solving', 'Time Management', 'Attention to Detail', 'Creativity', 'Leadership', 'Customer Focus', 'Self-Motivated'];
+
+            // Create skill boxes dynamically
+            skills.forEach(skill => {
+                const skillBox = document.createElement('div');
+                skillBox.classList.add('skillBox');
+                skillBox.textContent = skill;
+
+                // You can add additional logic/event listeners for each skill box here
+
+                skillsContainer.appendChild(skillBox);
+            });
+        });
+        </script>
 
           <script>
             // Update progress dynamically
@@ -248,7 +436,7 @@
         <script>
           // JavaScript to add/remove the 'blurred' class based on scroll position
             document.addEventListener('DOMContentLoaded', function () {
-                var navbar = document.getElementById('navbar1');
+                var navbar = document.getElementById('navbar');
                 var scrollThreshold = 30; // Adjust this value based on when you want the blur effect to start
 
                 window.addEventListener('scroll', function () {
