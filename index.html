@@ -4,17 +4,26 @@
         <link href="styles.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./logoWebsite.svg" type="image/x-icon">
+        <title>Harjot Singh | Portfolio</title>
 
     </head>
     <body>
     
         <div id="pageWrapper">
-            <nav id="navbar">
-            <button type="button"><a href="index.html" id="active">HOME</a></button>
-            <button type="button"><a href="about.html">ABOUT</a></button>
-            <button type="button"><a href="projects.html">PROJECTS</a></button>
-            <button type="button"><a href="contact.html">CONTACT</a></button>
-        </nav>
+
+            <div id="navbarLogo">
+                <div id="logoContainer">
+                    <img src="./Untitled-1 copy.svg" onclick="goToPage('index')">
+                </div>
+                <nav id="navbar">
+                    <button type="button"><a href="index.html" id="active">HOME</a></button>
+                    <button type="button"><a href="about.html">ABOUT</a></button>
+                    <button type="button"><a href="projects.html">PROJECTS</a></button>
+                    <button type="button"><a href="contact.html">CONTACT</a></button>
+                </nav>
+            </div>
+
 
 
 
@@ -28,7 +37,7 @@
                     data-aos-mirror="true"
                     data-aos-once="true">
                         <div id="nameMain">
-                            Harjot <br> <span style="font-style: italic; color: #4b8fdd;">Singh</span>
+                            Harjot <br> <span style="font-style: normal; color: #4b8fdd;">Singh</span>
                         </div>
                         <div id="textMain">
                             I'm Harjot, an application designer and developer
@@ -39,6 +48,7 @@
                         <div id="textMain" style="margin-top: 5px;">
                             <p id="vancouver-time"></p>
                         </div>
+                        <button id="downloadButton">Resume</button>
                 </div>
             
                 <div id="imageContainer"
@@ -153,7 +163,7 @@
                     data-aos-easing="ease-in-out"
                     data-aos-mirror="true"
                     data-aos-once="false">
-                        <button onclick="goToPage('about')">More About Me ↗</button>
+                        <button onclick="goToPage('about')">More About Me</button>
                     </div>
                 </div>
                 
@@ -198,7 +208,7 @@
                         data-aos-easing="ease-in-out"
                         data-aos-mirror="true"
                         data-aos-once="false">
-                        <button onclick="goToPage('projects')">All Projects ↗</button>
+                        <button onclick="goToPage('projects')">All Projects</button>
                     </div>
                 </div>
             </div>
@@ -241,6 +251,32 @@
                 </div>
             </div>
         </div>
+
+
+        <script>
+            document.getElementById('downloadButton').addEventListener('click', function() {
+                // Replace 'path/to/your/file.pdf' with the actual path to your PDF file
+                const pdfPath = 'Resume Hajots (3).pdf';
+        
+                // Create an anchor element
+                const anchor = document.createElement('a');
+        
+                // Set the href attribute to the PDF file path
+                anchor.href = pdfPath;
+        
+                // Set the download attribute with a desired filename for the user
+                anchor.download = 'Harjot Singh Resume';
+        
+                // Append the anchor element to the document
+                document.body.appendChild(anchor);
+        
+                // Trigger a click event on the anchor element
+                anchor.click();
+        
+                // Remove the anchor element from the document
+                document.body.removeChild(anchor);
+            });
+        </script>
 
 
         <script>

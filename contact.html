@@ -4,22 +4,99 @@
         <link href="styles.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./logoWebsite.svg" type="image/x-icon">
+        <title>Harjot Singh | Contact</title>
+
 
     </head>
     <body>
       
-      <nav id="navbar">
-        <button type="button"><a href="index.html" >HOME</a></button>
-        <button type="button"><a href="about.html" >ABOUT</a></button>
-        <button type="button"><a href="projects.html">PROJECTS</a></button>
-        <button type="button"><a href="contact.html" id="active">CONTACT</a></button>
-      </nav>
+      <div id="navbarLogo">
+        <div id="logoContainer">
+            <img src="./Untitled-1 copy.svg" onclick="goToPage('index')">
+        </div>
+        <nav id="navbar">
+            <button type="button"><a href="index.html">HOME</a></button>
+            <button type="button"><a href="about.html">ABOUT</a></button>
+            <button type="button"><a href="projects.html">PROJECTS</a></button>
+            <button type="button"><a href="contact.html" id="active">CONTACT</a></button>
+        </nav>
+      </div>
 
       <div id="pagesTitle">
         <h2>
-          lets<span style="font-style: italic; color: #4b8fdd;"> connect</span>
+          lets<span style="font-style: normal; color: #4b8fdd;"> connect</span>
         </h2>
       </div>
+
+
+      <div class="containerContact">
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" required>
+          </div>
+    
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" required>
+          </div>
+    
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+    
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+    
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+    
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
+
+      <div id="footer">
+        <div id="containerFooter">
+            <div id="nameFooter" onclick="goToPage('index')">
+                Harjot Singh 2023 &copy;
+            </div>
+            <div id="socialIcons">
+                <div class="social">
+                    <a target="_blank" href="https://github.com/harjotsk03/">
+                        <img src="./iconmonstr-github-4.png" alt="GitHub">
+                    </a>
+                </div>
+                
+                <div class="social">
+                    <a target="_blank" href="https://www.instagram.com/7harjotsk/">
+                        <img src="./iconmonstr-instagram-14.png" alt="Instagram">
+                    </a>
+                </div>
+                
+                <div class="social">
+                    <a target="_blank" href="https://www.linkedin.com/in/harjotsingh7/">
+                        <img src="./iconmonstr-linkedin-4.png" alt="LinkedIn">
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+      </div>
+      
+    
+    <script>
+        function goToPage(page) {
+            // Replace 'destination.html' with the actual URL of the destination page
+            window.location.href = `${page}.html`;
+        }
+    </script>
 
 
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

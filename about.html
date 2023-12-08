@@ -5,17 +5,23 @@
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css-circular-prog-bar.css" rel="stylesheet">
-
+        <link rel="icon" href="./logoWebsite.svg" type="image/x-icon">
+        <title>Harjot Singh | About</title>
     </head>
     <body>
 
 
-          <nav id="navbar">
-              <button type="button"><a href="index.html">HOME</a></button>
-              <button type="button"><a href="about.html" id="active">ABOUT</a></button>
-              <button type="button"><a href="projects.html">PROJECTS</a></button>
-              <button type="button"><a href="contact.html">CONTACT</a></button>
-          </nav>
+      <div id="navbarLogo">
+        <div id="logoContainer">
+            <img src="./Untitled-1 copy.svg" onclick="goToPage('index')">
+        </div>
+        <nav id="navbar">
+            <button type="button"><a href="index.html">HOME</a></button>
+            <button type="button"><a href="about.html" id="active">ABOUT</a></button>
+            <button type="button"><a href="projects.html">PROJECTS</a></button>
+            <button type="button"><a href="contact.html">CONTACT</a></button>
+        </nav>
+      </div>
           
           <div id="backgroundCircle"
           data-aos="zoom-in"
@@ -37,7 +43,7 @@
                     data-aos-once="true">
             <div id="pagesTitle">
                 <h2>
-                    about<span style="font-style: italic; color: #4b8fdd;"> harjot</span>
+                    about<span style="font-style: normal; color: #4b8fdd;"> harjot</span>
                 </h2>
             </div>
           </div>
@@ -305,7 +311,13 @@
           </div>
         </div>
         
-
+      
+      <script>
+          function goToPage(page) {
+              // Replace 'destination.html' with the actual URL of the destination page
+              window.location.href = `${page}.html`;
+          }
+      </script>
         
         <script>
           let currentIndex = 0;

@@ -19,6 +19,10 @@
     margin: 0;   
 }
 
+#navbarLogo{
+    display: flex;
+}
+
 nav {
     display: flex;
     flex-direction: row;
@@ -36,6 +40,7 @@ nav {
     border-radius: 50px;
     margin-top: 15px;
     height: 40px;
+    
 }
 
 
@@ -56,10 +61,11 @@ nav button {
 nav a {
     color: #0b0b0b;
     text-decoration: none;
-    transition: color 0.4s ease, transform 0.5s ease; /* Add transform property */
+    transition: color 0.4s ease, transform 0.5s ease, border-bottom 0.4s ease; /* Add border-bottom to the transition property */
     letter-spacing: 3px;
     text-transform: uppercase;
     display: inline-block; /* Needed for vertical alignment */
+    border-bottom: 2px solid transparent;
 }
 
 nav #active {
@@ -69,9 +75,22 @@ nav #active {
 
 nav a:hover {
     color: #3781DB;
-    transform: translateY(-5px); /* Adjust the value to control the upward movement */
+    border-bottom: 2px solid #3781DB;
 }
 
+#logoContainer{
+    width: 80px;
+    height: 80px;
+    margin-top: 5px;
+    margin-left: 5px;
+    transition: 0.3s ease-in-out;
+    position: fixed;
+    z-index: 999999;
+}
+
+#logoContainer:hover{
+    transform: scale(0.9);
+}
 
 #name{
     color: #4C5F75;
@@ -131,6 +150,27 @@ nav a:hover {
     width: 100%;
     height: auto;
     display: block;
+}
+
+
+#downloadButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-family: mainRegular;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background-color: #3781DB;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    transition: 0.3s ease-in-out;
+}
+
+#downloadButton:hover{
+    color: #3781DB;
+    background-color: transparent;
+    border: 2px solid #3781DB;
 }
 
 #section1 {
@@ -796,8 +836,62 @@ nav a:hover {
 
 
 
+.containerContact {
+    width: calc(100% / 1.5);
+    margin: 50px auto;
+    background-color: #f3f3f3;
+    padding: 50px;
+    border-radius: 20px;
+}
 
+.form-group {
+    margin-bottom: 20px;
+}
 
+.containerContact label {
+    font-family: mainBold;
+    display: inline;
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+
+.containerContact input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: mainRegular1;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 2px solid #3498db;
+    transition: 0.2s ease-in-out;
+}
+
+.containerContact input:focus, textarea:focus {
+    outline: 2px solid #3498db;
+  }
+
+.form-group input:focus + label,
+.form-group textarea:focus + label,
+.form-group input:not(:placeholder-shown) + label,
+.form-group textarea:not(:placeholder-shown) + label {
+    transform: translateY(-25px) scale(0.8);
+}
+
+.containerContact button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    font-family: mainRegular;
+}
 
 
 
@@ -829,6 +923,7 @@ nav a:hover {
     cursor: pointer;
     color: rgb(167, 167, 167);
 }
+
 
 
 
@@ -988,6 +1083,27 @@ nav a:hover {
         display: flex;
     }
 
+
+
+    #downloadButton {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 10px;
+        font-family: mainRegular;
+        letter-spacing: 1px;
+        cursor: pointer;
+        background-color: #3781DB;
+        color: white;
+        border: 2px solid transparent;
+        border-radius: 30px;
+        transition: 0.3s ease-in-out;
+    }
+
+    #downloadButton:hover{
+        color: white;
+        background-color: #3781DB;
+        border: 2px solid transparent;
+    }
 
     #section1{
         margin-top: 0px;
